@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ServidorTransmetro/SistemTransmetro?wsdl" uri="src/conf/xml-resources/web-service-references/SistemTransmetro/wsdl/localhost_8080/ServidorTransmetro/SistemTransmetro.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorTransmetro/SistemTransmetro?xsd=1" uri="src/conf/xml-resources/web-service-references/SistemTransmetro/wsdl/localhost_8080/ServidorTransmetro/SistemTransmetro.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServiceTransmetro/ServiceTransmetro?wsdl" uri="src/conf/xml-resources/web-service-references/ServiceTransmetro/wsdl/localhost_8080/ServiceTransmetro/ServiceTransmetro.wsdl"/>
+    <system systemId="http://localhost:8080/ServiceTransmetro/ServiceTransmetro?xsd=1" uri="src/conf/xml-resources/web-service-references/ServiceTransmetro/wsdl/localhost_8080/ServiceTransmetro/ServiceTransmetro.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorTransmetro/" uri="src/conf/xml-resources/web-service-references/WsClient/wsdl/localhost_8080/ServidorTransmetro/index"/>
+    <system systemId="http://localhost:8080/ServidorTransmetro/ServidorTransmetro?wsdl" uri="src/conf/xml-resources/web-service-references/ServidorTransmetro/wsdl/localhost_8080/ServidorTransmetro/ServidorTransmetro.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorTransmetro/ServidorTransmetro?xsd=1" uri="src/conf/xml-resources/web-service-references/ServidorTransmetro/wsdl/localhost_8080/ServidorTransmetro/ServidorTransmetro.xsd_1.xsd"/>
+</catalog>

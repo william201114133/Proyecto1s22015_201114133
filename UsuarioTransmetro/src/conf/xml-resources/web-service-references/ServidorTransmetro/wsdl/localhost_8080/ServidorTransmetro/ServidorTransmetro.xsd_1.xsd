@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://SistemTransmetro/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://SistemTransmetro/">
+
+<xs:element name="buscaradmin" type="tns:buscaradmin"/>
+
+<xs:element name="buscaradminResponse" type="tns:buscaradminResponse"/>
+
+<xs:element name="buscarchofer" type="tns:buscarchofer"/>
+
+<xs:element name="buscarchoferResponse" type="tns:buscarchoferResponse"/>
+
+<xs:element name="buscarestageneral" type="tns:buscarestageneral"/>
+
+<xs:element name="buscarestageneralResponse" type="tns:buscarestageneralResponse"/>
+
+<xs:element name="buscarestclave" type="tns:buscarestclave"/>
+
+<xs:element name="buscarestclaveResponse" type="tns:buscarestclaveResponse"/>
+
+<xs:element name="eliminaradmin" type="tns:eliminaradmin"/>
+
+<xs:element name="eliminaradminResponse" type="tns:eliminaradminResponse"/>
+
+<xs:element name="eliminarchofer" type="tns:eliminarchofer"/>
+
+<xs:element name="eliminarchoferResponse" type="tns:eliminarchoferResponse"/>
+
+<xs:element name="eliminarestaclave" type="tns:eliminarestaclave"/>
+
+<xs:element name="eliminarestaclaveResponse" type="tns:eliminarestaclaveResponse"/>
+
+<xs:element name="eliminarestageneral" type="tns:eliminarestageneral"/>
+
+<xs:element name="eliminarestageneralResponse" type="tns:eliminarestageneralResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="ingresaradmin" type="tns:ingresaradmin"/>
+
+<xs:element name="ingresaradminResponse" type="tns:ingresaradminResponse"/>
+
+<xs:element name="ingresarchofer" type="tns:ingresarchofer"/>
+
+<xs:element name="ingresarchoferResponse" type="tns:ingresarchoferResponse"/>
+
+<xs:element name="ingresarestacionclave" type="tns:ingresarestacionclave"/>
+
+<xs:element name="ingresarestacionclaveResponse" type="tns:ingresarestacionclaveResponse"/>
+
+<xs:element name="ingresarestageneral" type="tns:ingresarestageneral"/>
+
+<xs:element name="ingresarestageneralResponse" type="tns:ingresarestageneralResponse"/>
+
+<xs:complexType name="buscarchofer">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarchoferResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nodochofer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nodochofer">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ingresarestacionclave">
+<xs:sequence>
+<xs:element name="clave" type="xs:int"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresarestacionclaveResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresarestageneral">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresarestageneralResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarchofer">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarchoferResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarestclave">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarestclaveResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nodoestacion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nodoestacion">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="eliminarestaclave">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarestaclaveResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminaradmin">
+<xs:sequence>
+<xs:element name="clave" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminaradminResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaradmin">
+<xs:sequence>
+<xs:element name="clave" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaradminResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nodo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nodo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ingresaradmin">
+<xs:sequence>
+<xs:element name="llave" type="xs:int"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaradminResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresarchofer">
+<xs:sequence>
+<xs:element name="llave" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresarchoferResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarestageneral">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarestageneralResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarestageneral">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarestageneralResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
